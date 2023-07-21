@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
     content: ["./*.html", "./src/**/*.{vue,js,ts,jsx,tsx, css}"],
     theme: {
@@ -9,6 +12,9 @@ export default {
                 sm: theme("spacing.4"),
             },
         }),
+        fontFamily: {
+            display: ["Questrial", ...defaultTheme.fontFamily.sans],
+        },
         extend: {
             spacing: {
                 xs: "0.5rem",
