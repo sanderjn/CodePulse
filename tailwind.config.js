@@ -13,7 +13,7 @@ export default {
             },
         }),
         fontFamily: {
-            display: ["Questrial", ...defaultTheme.fontFamily.sans],
+            display: ["Rubik", ...defaultTheme.fontFamily.sans],
         },
         extend: {
             spacing: {
