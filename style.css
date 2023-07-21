@@ -973,6 +973,18 @@ html {
   line-height: 1.375;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1136,6 +1148,10 @@ html {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1189,6 +1205,14 @@ html {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .md\:leading-tight {
+    line-height: 1.25;
   }
 
   .md\:text-white {
