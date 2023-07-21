@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="antialiased">
+    <header class="bg-black">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="py-sm">
+                    <svg class="w-32" viewBox="0 0 135 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.55991 2.66525C4.7837 2.88904 4.7837 3.25189 4.55991 3.47568L1.38349 6.6521L4.55991 9.82852C4.7837 10.0523 4.7837 10.4152 4.55991 10.639C4.33611 10.8627 3.97327 10.8627 3.74948 10.639L0.167846 7.05732C-0.0559486 6.83352 -0.0559486 6.47068 0.167846 6.24689L3.74948 2.66525C3.97327 2.44146 4.33611 2.44146 4.55991 2.66525ZM7.04458 8.10934C7.26837 7.88554 7.63121 7.88554 7.85501 8.10934L11.4366 11.691C11.6604 11.9148 11.6604 12.2776 11.4366 12.5014L7.85501 16.083C7.63121 16.3068 7.26837 16.3068 7.04458 16.083C6.82078 15.8592 6.82078 15.4964 7.04458 15.2726L10.221 12.0962L7.04458 8.91977C6.82078 8.69597 6.82078 8.33313 7.04458 8.10934Z" fill="white"/>
+                        <path d="M28.4754 17.0406C26.8869 17.0406 25.515 16.6795 24.3597 15.9575C23.2044 15.2194 22.3138 14.2326 21.6881 12.997C21.0783 11.7615 20.7735 10.3896 20.7735 8.88131C20.7735 7.37301 21.0783 6.0011 21.6881 4.76558C22.3138 3.53006 23.2044 2.55127 24.3597 1.82921C25.515 1.09111 26.8869 0.722058 28.4754 0.722058C29.6788 0.722058 30.7619 0.938676 31.7246 1.37191C32.6874 1.7891 33.5057 2.36675 34.1796 3.10485C34.8536 3.84295 35.359 4.7014 35.696 5.68019H33.7945C33.3934 4.7014 32.7596 3.92318 31.8931 3.34553C31.0267 2.76789 29.9356 2.47907 28.6198 2.47907C27.3362 2.47907 26.237 2.76789 25.3224 3.34553C24.4239 3.90714 23.7419 4.66931 23.2766 5.63205C22.8113 6.59479 22.5786 7.67788 22.5786 8.88131C22.5786 10.0687 22.8113 11.1518 23.2766 12.1306C23.7419 13.0933 24.4239 13.8635 25.3224 14.4412C26.237 15.0028 27.3362 15.2836 28.6198 15.2836C29.9356 15.2836 31.0267 14.9947 31.8931 14.4171C32.7596 13.8394 33.3934 13.0612 33.7945 12.0824H35.696C35.359 13.0452 34.8536 13.9036 34.1796 14.6578C33.5057 15.3959 32.6874 15.9815 31.7246 16.4148C30.7619 16.832 29.6788 17.0406 28.4754 17.0406Z" fill="white"/>
+                        <path d="M43.2398 17.0406C42.0203 17.0406 40.9613 16.7678 40.0627 16.2222C39.1642 15.6606 38.4742 14.9065 37.9928 13.9598C37.5114 13.0131 37.2708 11.9701 37.2708 10.8309C37.2708 9.67557 37.5114 8.6326 37.9928 7.70195C38.4742 6.75525 39.1642 6.00913 40.0627 5.46357C40.9613 4.90197 42.0203 4.62117 43.2398 4.62117C44.4753 4.62117 45.5343 4.90197 46.4168 5.46357C47.3154 6.00913 48.0053 6.75525 48.4867 7.70195C48.9681 8.6326 49.2088 9.67557 49.2088 10.8309C49.2088 11.9701 48.9681 13.0131 48.4867 13.9598C48.0053 14.9065 47.3154 15.6606 46.4168 16.2222C45.5343 16.7678 44.4753 17.0406 43.2398 17.0406ZM43.2398 15.4039C44.1383 15.4039 44.8925 15.1953 45.5022 14.7781C46.128 14.3609 46.6013 13.8074 46.9223 13.1174C47.2432 12.4114 47.4036 11.6492 47.4036 10.8309C47.4036 9.99649 47.2432 9.23432 46.9223 8.54435C46.6013 7.85438 46.128 7.30081 45.5022 6.88362C44.8925 6.46643 44.1383 6.25783 43.2398 6.25783C42.3572 6.25783 41.6031 6.46643 40.9773 6.88362C40.3515 7.30081 39.8782 7.85438 39.5573 8.54435C39.2364 9.23432 39.0759 9.99649 39.0759 10.8309C39.0759 11.6492 39.2364 12.4114 39.5573 13.1174C39.8782 13.8074 40.3515 14.3609 40.9773 14.7781C41.6031 15.1953 42.3572 15.4039 43.2398 15.4039Z" fill="white"/>
+                        <path d="M56.6809 17.0406C55.5096 17.0406 54.4827 16.7678 53.6001 16.2222C52.7337 15.6606 52.0598 14.9065 51.5784 13.9598C51.097 13.0131 50.8563 11.9701 50.8563 10.8309C50.8563 9.67557 51.097 8.6326 51.5784 7.70195C52.0598 6.75525 52.7337 6.00913 53.6001 5.46357C54.4827 4.90197 55.5096 4.62117 56.6809 4.62117C57.6758 4.62117 58.5262 4.81372 59.2322 5.19882C59.9542 5.58391 60.5399 6.1054 60.9892 6.76327V0H62.7943V16.848H60.9892V14.9225C60.5399 15.5644 59.9542 16.0778 59.2322 16.4629C58.5262 16.848 57.6758 17.0406 56.6809 17.0406ZM56.9216 15.4039C57.8202 15.4039 58.5743 15.1953 59.1841 14.7781C59.8098 14.3609 60.2832 13.8074 60.6041 13.1174C60.925 12.4114 61.0855 11.6492 61.0855 10.8309C61.0855 9.99649 60.925 9.23432 60.6041 8.54435C60.2832 7.85438 59.8098 7.30081 59.1841 6.88362C58.5743 6.46643 57.8202 6.25783 56.9216 6.25783C56.0391 6.25783 55.2769 6.46643 54.6351 6.88362C53.9933 7.30081 53.5039 7.85438 53.1669 8.54435C52.83 9.23432 52.6615 9.99649 52.6615 10.8309C52.6615 11.6492 52.83 12.4114 53.1669 13.1174C53.5039 13.8074 53.9933 14.3609 54.6351 14.7781C55.2769 15.1953 56.0391 15.4039 56.9216 15.4039Z" fill="white"/>
+                        <path d="M71.2599 17.0406C70.0404 17.0406 68.9734 16.7678 68.0588 16.2222C67.1442 15.6606 66.4301 14.9065 65.9167 13.9598C65.4193 13.0131 65.1705 11.9701 65.1705 10.8309C65.1705 9.67557 65.4112 8.6326 65.8926 7.70195C66.374 6.75525 67.0639 6.00913 67.9625 5.46357C68.8611 4.90197 69.9201 4.62117 71.1395 4.62117C72.3751 4.62117 73.4341 4.90197 74.3166 5.46357C75.2151 6.00913 75.9051 6.75525 76.3865 7.70195C76.8679 8.6326 77.1086 9.67557 77.1086 10.8309V11.5529H67.0238C67.1201 12.2589 67.3447 12.9088 67.6977 13.5025C68.0668 14.0801 68.5562 14.5455 69.1659 14.8985C69.7757 15.2354 70.4817 15.4039 71.284 15.4039C72.1344 15.4039 72.8484 15.2194 73.4261 14.8503C74.0037 14.4652 74.453 13.9758 74.7739 13.3821H76.7475C76.3303 14.4572 75.6644 15.3397 74.7498 16.0297C73.8513 16.7036 72.688 17.0406 71.2599 17.0406ZM67.0479 9.86812H75.2312C75.0707 8.8412 74.6375 7.98275 73.9315 7.29278C73.2255 6.60282 72.2948 6.25783 71.1395 6.25783C69.9843 6.25783 69.0536 6.60282 68.3476 7.29278C67.6576 7.98275 67.2244 8.8412 67.0479 9.86812Z" fill="white"/>
+                        <path d="M79.3142 21.6136V4.81372H81.1193V6.73921C81.5686 6.08133 82.1463 5.56787 82.8523 5.19882C83.5743 4.81372 84.4328 4.62117 85.4276 4.62117C86.599 4.62117 87.6179 4.90197 88.4843 5.46357C89.3668 6.00913 90.0488 6.75525 90.5302 7.70195C91.0115 8.6326 91.2522 9.67557 91.2522 10.8309C91.2522 11.9701 91.0115 13.0131 90.5302 13.9598C90.0488 14.9065 89.3668 15.6606 88.4843 16.2222C87.6179 16.7678 86.599 17.0406 85.4276 17.0406C84.4328 17.0406 83.5743 16.848 82.8523 16.4629C82.1463 16.0618 81.5686 15.5403 81.1193 14.8985V21.6136H79.3142ZM85.1869 15.4039C86.0855 15.4039 86.8477 15.1953 87.4734 14.7781C88.1153 14.3609 88.6047 13.8074 88.9416 13.1174C89.2786 12.4114 89.4471 11.6492 89.4471 10.8309C89.4471 9.99649 89.2786 9.23432 88.9416 8.54435C88.6047 7.85438 88.1153 7.30081 87.4734 6.88362C86.8477 6.46643 86.0855 6.25783 85.1869 6.25783C84.3044 6.25783 83.5503 6.46643 82.9245 6.88362C82.2987 7.30081 81.8254 7.85438 81.5044 8.54435C81.1835 9.23432 81.0231 9.99649 81.0231 10.8309C81.0231 11.6492 81.1835 12.4114 81.5044 13.1174C81.8254 13.8074 82.2987 14.3609 82.9245 14.7781C83.5503 15.1953 84.3044 15.4039 85.1869 15.4039Z" fill="white"/>
+                        <path d="M98.3218 17.0406C97.5034 17.0406 96.7252 16.848 95.9871 16.4629C95.249 16.0618 94.6473 15.4761 94.182 14.7059C93.7327 13.9197 93.5081 12.9569 93.5081 11.8177V4.81372H95.3132V11.7695C95.3132 12.8607 95.6261 13.7432 96.2519 14.4171C96.8937 15.075 97.704 15.4039 98.6828 15.4039C99.3567 15.4039 99.9665 15.2515 100.512 14.9466C101.058 14.6257 101.491 14.1924 101.812 13.6469C102.149 13.1013 102.317 12.4675 102.317 11.7455V4.81372H104.122V16.848H102.317V14.9707C101.884 15.5483 101.354 16.0377 100.729 16.4388C100.103 16.84 99.3006 17.0406 98.3218 17.0406Z" fill="white"/>
+                        <path d="M107.261 16.848V0H109.066V16.848H107.261Z" fill="white"/>
+                        <path d="M116.577 17.0406C115.47 17.0406 114.532 16.856 113.761 16.487C113.007 16.1179 112.43 15.6366 112.028 15.0429C111.627 14.4331 111.403 13.7753 111.355 13.0692H113.232C113.28 13.4704 113.416 13.8635 113.641 14.2486C113.882 14.6177 114.243 14.9225 114.724 15.1632C115.205 15.3879 115.831 15.5002 116.601 15.5002C116.842 15.5002 117.139 15.4761 117.492 15.428C117.845 15.3798 118.182 15.2916 118.503 15.1632C118.84 15.0348 119.121 14.8423 119.345 14.5856C119.57 14.3288 119.682 13.9999 119.682 13.5988C119.682 13.1013 119.49 12.7162 119.105 12.4435C118.72 12.1707 118.222 11.9621 117.612 11.8177C117.003 11.6572 116.353 11.5048 115.663 11.3604C114.989 11.216 114.347 11.0314 113.737 10.8068C113.128 10.5661 112.63 10.2372 112.245 9.81999C111.86 9.38675 111.667 8.80108 111.667 8.06298C111.667 6.97187 112.061 6.12947 112.847 5.53578C113.649 4.92604 114.828 4.62117 116.385 4.62117C117.444 4.62117 118.302 4.78965 118.96 5.12661C119.634 5.44753 120.14 5.86471 120.477 6.37818C120.83 6.89164 121.038 7.44522 121.102 8.03891H119.273C119.209 7.52545 118.952 7.08419 118.503 6.71514C118.07 6.34609 117.348 6.16156 116.337 6.16156C114.427 6.16156 113.473 6.73921 113.473 7.8945C113.473 8.37587 113.665 8.74492 114.05 9.00165C114.435 9.25839 114.933 9.46698 115.542 9.62744C116.152 9.77185 116.794 9.91626 117.468 10.0607C118.158 10.189 118.808 10.3736 119.417 10.6142C120.027 10.8549 120.525 11.1999 120.91 11.6492C121.295 12.0824 121.487 12.6761 121.487 13.4303C121.487 14.6016 121.038 15.5002 120.14 16.126C119.257 16.7357 118.07 17.0406 116.577 17.0406Z" fill="white"/>
+                        <path d="M129.151 17.0406C127.932 17.0406 126.865 16.7678 125.95 16.2222C125.036 15.6606 124.322 14.9065 123.808 13.9598C123.311 13.0131 123.062 11.9701 123.062 10.8309C123.062 9.67557 123.303 8.6326 123.784 7.70195C124.265 6.75525 124.955 6.00913 125.854 5.46357C126.753 4.90197 127.812 4.62117 129.031 4.62117C130.267 4.62117 131.326 4.90197 132.208 5.46357C133.107 6.00913 133.797 6.75525 134.278 7.70195C134.759 8.6326 135 9.67557 135 10.8309V11.5529H124.915C125.012 12.2589 125.236 12.9088 125.589 13.5025C125.958 14.0801 126.448 14.5455 127.057 14.8985C127.667 15.2354 128.373 15.4039 129.175 15.4039C130.026 15.4039 130.74 15.2194 131.318 14.8503C131.895 14.4652 132.344 13.9758 132.665 13.3821H134.639C134.222 14.4572 133.556 15.3397 132.641 16.0297C131.743 16.7036 130.579 17.0406 129.151 17.0406ZM124.939 9.86812H133.123C132.962 8.8412 132.529 7.98275 131.823 7.29278C131.117 6.60282 130.186 6.25783 129.031 6.25783C127.876 6.25783 126.945 6.60282 126.239 7.29278C125.549 7.98275 125.116 8.8412 124.939 9.86812Z" fill="white"/>
+                    </svg>
+                </div>
+                <nav role="navigation">
+                    <ul class="hidden md:flex md:gap-lg md:text-white">
+                        <li>
+                            <a href="#benefits" class="inline-block py-3 transition-colors hover:text-rose-500">Benefits</a>
+                        </li>
+                        <li>
+                            <a href="#plans" class="inline-block py-3 transition-colors hover:text-rose-500">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="inline-block py-3 transition-colors hover:text-rose-500">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="inline-block py-3 transition-colors hover:text-rose-500">Recent work</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block py-3 transition-colors hover:text-rose-500">Client login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container pt-xl pb-lg md:pb-2xl">
+            <div class="grid gap-lg md:grid-cols-2 md:gap-xl">
+                <div>
+                    <h1 class="text-3xl font-semibold text-white leading-snug max-w-md md:text-5xl">Your web designs to <span class="text-rose-600">HTML and CSS</span> in just <span class="text-rose-600">a few days</span></h1>
+                    <p class="mt-sm text-lg text-gray-200">Development subscriptions for clean, pixel-perfect code</p>
+
+                    <div class="inline-block text-center">
+                        <p class="mt-md">
+                            <a href="#plans" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                                See plans
+                            </a>
+                        </p>
+                        <p class="mt-xs text-sm text-gray-500">Pause or cancel anytime</p>
+                    </div>
+                </div>
+                <img src="src/img/macbook.jpeg" alt="" class="w-full -mt-md md:-mt-xl">
+            </div>
+        </div>
+    </header>
+    <svg class="w-full text-black -mt-px" viewBox="0 0 1440 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M720 32.6136C440 32.6136 0 0.613586 0 0.613586H1440C1440 0.613586 1000 32.6136 720 32.6136Z" fill="currentColor"/>
+    </svg>
+    <main>
+        <section class="relative">
+            <div class="container mt-2xl">
+                <div class="mx-auto max-w-lg md:text-center">
+                    <h2 class="text-4xl font-medium text-gray-900">Hassle-free web development</h2>
+                    <p class="mt-sm text-gray-800">Tired of front-end development taking a long time? Get ready have your web designs converted into HTML & CSS in just a few days, without any hassle.</p>
+                </div>
+                <div class="mt-2xl grid gap-lg md:grid-cols-3 md:gap-2xl">
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M55.154 80.0776L50.1747 61.4802M50.1747 61.4802L40.9713 69.6386L43.0577 34.9152L62.2233 63.9442L50.1747 61.4802ZM22.6087 60.5012C19.0913 56.9834 16.4958 52.6525 15.052 47.892C13.6083 43.1315 13.3608 38.0885 14.3316 33.2095C15.3023 28.3305 17.4614 23.7663 20.6174 19.921C23.7735 16.0758 27.8291 13.0682 32.4252 11.1647C37.0212 9.26123 42.0157 8.5206 46.9663 9.00841C51.917 9.49622 56.6709 11.1974 60.807 13.9613C64.9431 16.7252 68.3338 20.4665 70.6786 24.8538C73.0235 29.2411 74.2502 34.139 74.25 39.1136M30.3893 52.7242C28.1506 50.4858 26.4984 47.7298 25.5792 44.7004C24.6601 41.6709 24.5022 38.4615 25.1198 35.3564C25.7373 32.2514 27.1111 29.3466 29.1195 26.8993C31.1278 24.4521 33.7088 22.538 36.6337 21.3265C39.5585 20.115 42.7371 19.6436 45.8876 19.9541C49.0382 20.2645 52.0636 21.3472 54.6958 23.1062C57.328 24.8653 59.4857 27.2463 60.9778 30.0385C62.4699 32.8307 63.2504 35.9477 63.25 39.1136" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p class="mt-sm text-gray-800">Subscribe to a plan and submit as many web designs as you’d like</p>
+                    </div>
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.75 28.1136L35.75 36.3636L24.75 44.6136M41.25 44.6136H52.25M19.25 74.8636H68.75C70.938 74.8636 73.0365 73.9944 74.5836 72.4472C76.1308 70.9 77 68.8016 77 66.6136V22.6136C77 20.4256 76.1308 18.3271 74.5836 16.78C73.0365 15.2328 70.938 14.3636 68.75 14.3636H19.25C17.062 14.3636 14.9635 15.2328 13.4164 16.78C11.8692 18.3271 11 20.4256 11 22.6136V66.6136C11 68.8016 11.8692 70.9 13.4164 72.4472C14.9635 73.9944 17.062 74.8636 19.25 74.8636Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p class="mt-sm text-gray-800">Receive your HTML & CSS within a few business days on average</p>
+                    </div>
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M58.751 34.8896H77.055L65.3913 23.2186C61.6363 19.4634 56.9588 16.763 51.8291 15.3888C46.6995 14.0146 41.2984 14.015 36.169 15.39C31.0396 16.765 26.3625 19.4661 22.6079 23.2218C18.8534 26.9775 16.1537 31.6554 14.7803 36.7852M10.945 72.6416V54.3376M10.945 54.3376H29.249M10.945 54.3376L22.605 66.0086C26.3601 69.7637 31.0376 72.4641 36.1672 73.8384C41.2969 75.2126 46.6979 75.2122 51.8274 73.8372C56.9568 72.4622 61.6339 69.7611 65.3884 66.0054C69.1429 62.2497 71.8426 57.5718 73.216 52.4419M77.055 16.5856V34.8822" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p class="mt-sm text-gray-800">We’ll revise the code until you’re 100% satisfied</p>
+                    </div>
+                </div>
+                <div class="mt-2xl mx-auto max-w-lg">
+                    <div class="px-md pt-md pb-lg flex flex-col gap-md bg-sky-50 rounded-3xl md:-mx-md">
+                        <div class="flex items-center justify-between">
+                            <svg class="w-8 text-sky-600" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.672 27.0456C0.224 24.9549 0 22.2669 0 18.9816C0 15.6963 1.26933 12.1496 3.808 8.34159C6.42133 4.53359 8.81067 1.95759 10.976 0.613586C12.2453 1.13626 13.44 1.99492 14.56 3.18959C13.7387 5.65359 11.424 9.08825 7.616 13.4936C6.64533 14.6136 6.08533 15.2483 5.936 15.3976C8.54933 15.3976 10.3413 15.4723 11.312 15.6216C11.76 17.0403 11.984 18.9816 11.984 21.4456C11.984 23.9096 11.9093 25.6643 11.76 26.7096C10.1173 27.0829 8.36267 27.2696 6.496 27.2696C4.704 27.2696 2.76267 27.1949 0.672 27.0456ZM19.6 27.0456C19.152 24.9549 18.928 22.2669 18.928 18.9816C18.928 15.6963 20.1973 12.1496 22.736 8.34159C25.3493 4.53359 27.7387 1.95759 29.904 0.613586C31.1733 1.13626 32.368 1.99492 33.488 3.18959C32.6667 5.65359 30.3147 9.08825 26.432 13.4936C25.536 14.6136 25.0133 15.2483 24.864 15.3976C27.4773 15.3976 29.2693 15.4723 30.24 15.6216C30.688 17.0403 30.912 18.9816 30.912 21.4456C30.912 23.9096 30.8373 25.6643 30.688 26.7096C29.0453 27.0829 27.2907 27.2696 25.424 27.2696C23.632 27.2696 21.6907 27.1949 19.6 27.0456Z" fill="currentColor"/>
+                            </svg>
+                            <a href="https://boonstramarketing.nl" target="_blank" class="text-sm text-sky-900 font-medium hover:underline">Visit boonstramarketing.nl</a>
+                        </div>
+                        <blockquote class="flex flex-col gap-md md:text-center">
+                            <p class="text-lg text-gray-800 sm:text-xl">"The website has turned out really well! It feels smooth, responsive works as it should, and it includes (micro)transitions that truly enhance the website."</p>
+                            <footer class="text-sky-900">
+                                <cite class="not-italic font-medium">Olivier Heida</cite>
+                                <p class="text-sm">Designer at De Designpraktijk</p>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div id="work" class="mt-3xl">
+                    <div class="mx-auto max-w-lg md:text-center">
+                        <h2 class="text-4xl font-medium text-gray-900">Recent work</h2>
+                        <p class="mt-sm text-gray-800">These companies have successfully implemented our front-end code on their website. Examples include WordPress, Statamic and custom E-commerce solutions.</p>
+                    </div>
+                    <div class="mt-lg grid gap-md md:grid-cols-2 md:gap-xl">
+                        <div class="w-full aspect-square bg-gray-100 rounded-3xl overflow-hidden">
+                            <a href="https://boonstramarketing.nl" target="_blank">
+                                <img src="src/img/boonstra.jpg" alt="Website Boonstra Marketing" class="w-full h-full object-cover transition-transform hover:scale-110">
+                            </a>
+                        </div>
+                        <div class="w-full aspect-square bg-gray-100 rounded-3xl overflow-hidden">
+                            <a href="https://www.worldnauticcenter.nl/wakeboards/jobe-prolix-wakeboard-blauworanje-138cm" target="_blank">
+                                <img src="src/img/wnc.jpg" alt="Website Boonstra Marketing" class="w-full h-full object-cover transition-transform hover:scale-110">
+                            </a>
+                        </div>
+                        <div class="w-full aspect-square bg-gray-100 rounded-3xl overflow-hidden">
+                            <a href="https://advocatenkantoorvos.nl" target="_blank">
+                                <img src="src/img/vos.jpg" alt="Website Boonstra Marketing" class="w-full h-full object-cover transition-transform hover:scale-110">
+                            </a>
+                        </div>
+                        <div class="w-full aspect-square bg-gray-100 rounded-3xl overflow-hidden">
+                            <a href="https://cerespsychologie.nl" target="_blank">
+                                <img src="src/img/ceres.jpg" alt="Website Boonstra Marketing" class="w-full h-full object-cover transition-transform hover:scale-110">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="-mt-24">
+            <svg class="-mb-px w-full z-0 text-gray-100" viewBox="0 0 1440 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M720 0.269531C440 0.269531 0 32.2695 0 32.2695H1440C1440 32.2695 1000 0.269531 720 0.269531Z" fill="currentColor"/>
+            </svg>
+            <div class="pt-24 bg-gray-100">
+                <div class="py-2xl container md:py-3xl">
+                    <div class="grid gap-xl md:grid-cols-2">
+                        <div class="max-w-md">
+                            <h2 class="text-4xl font-medium text-gray-900">Not your average development agency</h2>
+                            <p class="mt-sm text-gray-800">CodePulse offers a flat monthly fee, with top-quality HTML & CSS code delivered lightning fast and ready to implement in your application.</p>
+                            <div class="inline-block text-center">
+                                <p class="mt-md">
+                                    <a href="#plans" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                                        See plans
+                                    </a>
+                                </p>
+                                <p class="mt-xs text-sm text-gray-500">Pause or cancel anytime</p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="flex flex-col gap-lg">
+                                <li>
+                                    <h3 class="text-lg font-bold">100% async</h3>
+                                    <p class="mt-xs text-gray-800">Meetings take a lot of time, cost a lot of money, and slow down the process. So we just don’t have them, at all.</p>
+                                </li>
+                                <li>
+                                    <h3 class="text-lg font-bold">Easily manage in Notion</h3>
+                                    <p class="mt-xs text-gray-800">Manage your development requests in Notion. View active, queued and complete tasks with ease.</p>
+                                </li>
+                                <li>
+                                    <h3 class="text-lg font-bold">Invite unlimited coworkers</h3>
+                                    <p class="mt-xs text-gray-800">You’ll be able to invite your entire team, so anyone can submit requests and track the progress.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg class="-mt-px w-full text-gray-100" viewBox="0 0 1440 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0.269531C0 0.269531 440 32.2695 720 32.2695V0.269531H0Z" fill="currentColor"/>
+                <path d="M1440 0.269531C1440 0.269531 1000 32.2695 720 32.2695V0.269531H1440Z" fill="currentColor"/>
+            </svg>
+        </section>
+        <section id="benefits" class="relative">
+            <div class="py-2xl container md:py-3xl">
+
+                <div class="mx-auto max-w-lg text-center">
+                    <h2 class="text-4xl font-medium text-gray-900">Membership benefits</h2>
+                    <p class="mt-sm text-gray-800">Don’t worry about hiring another development agency ever again.</p>
+                </div>
+
+                <div class="mt-2xl grid gap-lg md:grid-cols-3 md:gap-2xl">
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M57.442 14.5255C56.9531 12.796 55.9128 11.2734 54.4793 10.1893C53.0457 9.10517 51.2973 8.51887 49.5 8.51953H38.5C34.7233 8.51953 31.5333 11.0605 30.558 14.5255M57.442 14.5255C57.6437 15.2369 57.75 15.9922 57.75 16.7695C57.75 17.4989 57.4603 18.1984 56.9445 18.7141C56.4288 19.2298 55.7293 19.5195 55 19.5195H33C32.2707 19.5195 31.5712 19.2298 31.0555 18.7141C30.5397 18.1984 30.25 17.4989 30.25 16.7695C30.25 15.9922 30.36 15.2369 30.558 14.5255M57.442 14.5255C59.8107 14.7052 62.1647 14.9289 64.5077 15.2002C68.541 15.6695 71.5 19.1492 71.5 23.2119V71.7695C71.5 73.9576 70.6308 76.056 69.0836 77.6032C67.5365 79.1503 65.438 80.0195 63.25 80.0195H24.75C22.562 80.0195 20.4635 79.1503 18.9164 77.6032C17.3692 76.056 16.5 73.9576 16.5 71.7695V23.2119C16.5 19.1492 19.4553 15.6695 23.4923 15.2002C25.8428 14.928 28.1985 14.7031 30.558 14.5255" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="mt-sm text-lg font-bold">Development board</h3>
+                        <p class="mt-sm text-gray-800">Add as many development requests to your company’s board as you’d like.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.75 49.7695L52.25 8.51953L44 38.7695H74.25L35.75 80.0195L44 49.7695H13.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <h3 class="mt-sm text-lg font-bold">Fast delivery</h3>
+                        <p class="mt-sm text-gray-800">Get your development requests delivered one at a time in just a few days on average.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 22.2695V66.2695M33 55.9369L36.223 58.3532C40.5167 61.5762 47.4797 61.5762 51.777 58.3532C56.0743 55.1302 56.0743 49.9089 51.777 46.6859C49.632 45.0725 46.816 44.2695 44 44.2695C41.3417 44.2695 38.6833 43.4629 36.6557 41.8532C32.6003 38.6302 32.6003 33.4089 36.6557 30.1859C40.711 26.9629 47.289 26.9629 51.3443 30.1859L52.866 31.3959M77 44.2695C77 48.6032 76.1464 52.8943 74.488 56.8981C72.8296 60.9018 70.3989 64.5397 67.3345 67.6041C64.2702 70.6684 60.6323 73.0992 56.6286 74.7576C52.6248 76.416 48.3336 77.2695 44 77.2695C39.6664 77.2695 35.3752 76.416 31.3714 74.7576C27.3677 73.0992 23.7298 70.6684 20.6655 67.6041C17.6011 64.5397 15.1704 60.9018 13.512 56.8981C11.8536 52.8943 11 48.6032 11 44.2695C11 35.5174 14.4768 27.1237 20.6655 20.935C26.8542 14.7463 35.2479 11.2695 44 11.2695C52.7521 11.2695 61.1458 14.7463 67.3345 20.935C73.5232 27.1237 77 35.5174 77 44.2695Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <h3 class="mt-sm text-lg font-bold">Fixed monthly rate</h3>
+                        <p class="mt-sm text-gray-800">No surprises. The same fixed price every month.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 27.7695L27.5 11.2695M27.5 11.2695L44 27.7695M27.5 11.2695V60.7695M77 60.7695L60.5 77.2695M60.5 77.2695L44 60.7695M60.5 77.2695V27.7695" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <h3 class="mt-sm text-lg font-bold">Flexible and scalable</h3>
+                        <p class="mt-sm text-gray-800">Scale up or down as needed. Pause or cancel your plan at any time.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.75 28.1136L35.75 36.3636L24.75 44.6136M41.25 44.6136H52.25M19.25 74.8636H68.75C70.938 74.8636 73.0365 73.9944 74.5836 72.4472C76.1308 70.9 77 68.8016 77 66.6136V22.6136C77 20.4256 76.1308 18.3271 74.5836 16.78C73.0365 15.2328 70.938 14.3636 68.75 14.3636H19.25C17.062 14.3636 14.9635 15.2328 13.4164 16.78C11.8692 18.3271 11 20.4256 11 22.6136V66.6136C11 68.8016 11.8692 70.9 13.4164 72.4472C14.9635 73.9944 17.062 74.8636 19.25 74.8636Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="mt-sm text-lg font-bold">Clean &amp; bug-free code</h3>
+                        <p class="mt-sm text-gray-800">High quality code standards, guaranteed without any bugs.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <svg class="mx-auto w-20" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.5 5.76953H30.25C28.062 5.76953 25.9635 6.63873 24.4164 8.1859C22.8692 9.73308 22 11.8315 22 14.0195V74.5195C22 76.7076 22.8692 78.806 24.4164 80.3532C25.9635 81.9003 28.062 82.7695 30.25 82.7695H57.75C59.938 82.7695 62.0365 81.9003 63.5836 80.3532C65.1308 78.806 66 76.7076 66 74.5195V14.0195C66 11.8315 65.1308 9.73308 63.5836 8.1859C62.0365 6.63873 59.938 5.76953 57.75 5.76953H49.5M38.5 5.76953V11.2695H49.5V5.76953M38.5 5.76953H49.5M38.5 74.5195H49.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        <h3 class="mt-sm text-lg font-bold">Pixel-perfect and responsive</h3>
+                        <p class="mt-sm text-gray-800">We’ll make sure the code does your design justice on all devices.</p>
+                    </div>
+                </div>
+
+                <div class="mt-2xl block text-center">
+                    <p>
+                        <a href="#plans" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                            See plans
+                        </a>
+                    </p>
+                    <p class="mt-xs text-sm text-gray-500">Pause or cancel anytime</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans">
+            <svg class="-mb-px w-full z-0 text-gray-100" viewBox="0 0 1440 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M720 0.269531C440 0.269531 0 32.2695 0 32.2695H1440C1440 32.2695 1000 0.269531 720 0.269531Z" fill="currentColor"/>
+            </svg>
+            <div class="bg-gray-100">
+                <div class="py-2xl container md:py-3xl">
+                    <div class="mx-auto max-w-lg text-center">
+                        <h2 class="text-4xl font-medium text-gray-900">Membership levels</h2>
+                        <p class="mt-sm text-gray-800">Choose a plan that’s right for you.</p>
+                    </div>
+
+                    <div class="mt-lg grid gap-xs rounded-3xl overflow-hidden md:grid-cols-4">
+                        <div class="p-md flex flex-col justify-between bg-white">
+                            <div>
+                                <h3 class="text-xl font-bold">Monthly</h3>
+                                <p class="mt-xs text-sm text-gray-800">No minimal commitment.<br>Pause or cancel anytime.</p>
+                            </div>
+                            <div>
+
+                                <p class="mt-sm text-lg font-bold">&euro;2500/m</p>
+                                <p class="text-xs text-gray-500">Pause or cancel anytime</p>
+                                <div class="mt-md block text-center">
+                                    <p>
+                                        <a href="https://buy.stripe.com/28o3gh6cRaBN2NG4gj" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                                            Get started
+                                        </a>
+                                    </p>
+                                    <p class="mt-xs text-sm text-gray-900 font-bold">
+                                        <a href="#" class="hover:underline">
+                                            Book a call
+                                        </a>
+                                    </p>
+                                </div>
+                                <h4 class="mt-md font-bold">
+                                    What's included:
+                                </h4>
+                                <ul class="mt-xs mb-xs pl-4 text-sm text-gray-800 list-disc space-y-1 marker:text-gray-300">
+                                    <li>One request at a time</li>
+                                    <li>Unlimited requests in queue</li>
+                                    <li>Unlimited brands</li>
+                                    <li>Unlimited users</li>
+                                    <li>Easy credit-card payments</li>
+                                    <li>Pause or cancel anytime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-md flex flex-col justify-between bg-white">
+                            <div>
+                                <h3 class="text-xl font-bold">Quarterly</h3>
+                                <p class="mt-xs text-sm text-gray-800">Save €250 per month.</p>
+                            </div>
+                            <div>
+
+                                <p class="mt-sm text-lg font-bold">&euro;2250/m</p>
+                                <p class="text-xs text-gray-500">Paid quarterly</p>
+                                <div class="mt-md block text-center">
+                                    <p>
+                                        <a href="https://buy.stripe.com/fZeeYZ8kZ5ht2NG28c" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                                            Get started
+                                        </a>
+                                    </p>
+                                    <p class="mt-xs text-sm text-gray-900 font-bold">
+                                        <a href="#" class="hover:underline">
+                                            Book a call
+                                        </a>
+                                    </p>
+                                </div>
+                                <h4 class="mt-md font-bold">
+                                    What's included:
+                                </h4>
+                                <ul class="mt-xs mb-xs pl-4 text-sm text-gray-800 list-disc space-y-1 marker:text-gray-300">
+                                    <li>One request at a time</li>
+                                    <li>Unlimited requests in queue</li>
+                                    <li>Unlimited brands</li>
+                                    <li>Unlimited users</li>
+                                    <li>Easy credit-card payments</li>
+                                    <li>Quarterly strategy call</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-md flex flex-col justify-between bg-white">
+                            <div>
+                                <h3 class="text-xl font-bold">Yearly</h3>
+                                <p class="mt-xs text-sm text-gray-800">Save €500 per month.</p>
+                            </div>
+                            <div>
+
+                                <p class="mt-sm text-lg font-bold">&euro;2000/m</p>
+                                <p class="text-xs text-gray-500">Paid yearly</p>
+                                <div class="mt-md block text-center">
+                                    <p>
+                                        <a href="https://buy.stripe.com/bIYdUV7gV5ht5ZS6ot" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                                            Get started
+                                        </a>
+                                    </p>
+                                    <p class="mt-xs text-sm text-gray-900 font-bold">
+                                        <a href="#" class="hover:underline">
+                                            Book a call
+                                        </a>
+                                    </p>
+                                </div>
+                                <h4 class="mt-md font-bold">
+                                    What's included:
+                                </h4>
+                                <ul class="mt-xs mb-xs pl-4 text-sm text-gray-800 list-disc space-y-1 marker:text-gray-300">
+                                    <li>One request at a time</li>
+                                    <li>Unlimited requests in queue</li>
+                                    <li>Unlimited brands</li>
+                                    <li>Unlimited users</li>
+                                    <li>Easy credit-card payments</li>
+                                    <li>Quarterly strategy call</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-md flex flex-col justify-between gap-md bg-white">
+                            <div class="text-center">
+                                <h3 class="text-xl font-bold">Book a call</h3>
+                                <p class="mt-xs text-gray-800">Learn more about how CodePulse works and how it can help you.</p>
+                            </div>
+                            <div class="mx-auto flex flex-col gap-sm">
+                                <img class="w-20 mx-auto" src="src/img/sander.jpg" alt="Sander" width="100" height="100">
+                                <a href="#" class="px-md py-sm inline-flex items-center gap-2 bg-sky-50 text-sky-900 font-medium rounded-full transition-colors hover:bg-sky-100">
+                                    <svg class="w-4 h-4 text-current" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3.26953C1.5 2.7391 1.71071 2.23039 2.08579 1.85532C2.46086 1.48024 2.96957 1.26953 3.5 1.26953H4.41467C4.988 1.26953 5.488 1.6602 5.62733 2.2162L6.364 5.16486C6.4237 5.40353 6.41164 5.6545 6.32934 5.88635C6.24704 6.11819 6.09815 6.32059 5.90133 6.4682L5.03933 7.11486C4.94933 7.1822 4.93 7.28086 4.95533 7.34953C5.33159 8.37277 5.92573 9.302 6.69663 10.0729C7.46753 10.8438 8.39677 11.4379 9.42 11.8142C9.48867 11.8395 9.58667 11.8202 9.65467 11.7302L10.3013 10.8682C10.4489 10.6714 10.6513 10.5225 10.8832 10.4402C11.115 10.3579 11.366 10.3458 11.6047 10.4055L14.5533 11.1422C15.1093 11.2815 15.5 11.7815 15.5 12.3555V13.2695C15.5 13.8 15.2893 14.3087 14.9142 14.6837C14.5391 15.0588 14.0304 15.2695 13.5 15.2695H12C6.20133 15.2695 1.5 10.5682 1.5 4.76953V3.26953Z" fill="currentColor"/>
+                                        </svg>
+
+                                    <span>Book a call</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-md bg-black md:col-span-4 md:text-center">
+                            <h3 class="text-xl font-bold text-white">Website deployment</h3>
+                            <p class="mt-xs text-sm text-gray-200">Have CodePulse deploy your website through Vercel or Netlify. Requires a development subscription.</p>
+                            <p class="mt-sm text-lg font-bold text-white">&euro;1000/m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg class="-mt-px w-full text-gray-100" viewBox="0 0 1440 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0.269531C0 0.269531 440 32.2695 720 32.2695V0.269531H0Z" fill="currentColor"/>
+                <path d="M1440 0.269531C1440 0.269531 1000 32.2695 720 32.2695V0.269531H1440Z" fill="currentColor"/>
+            </svg>
+        </section>
+
+        <section id="faq" class="relative">
+            <div class="py-2xl container md:py-3xl">
+                <div class="mx-auto max-w-lg text-center">
+                    <h2 class="text-4xl font-medium text-gray-900">Frequently asked questions</h2>
+                </div>
+
+                <div class="mt-lg mx-auto max-w-lg divide-y divide-y-gray-300">
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>Why wouldn’t I just hire a full-time developer?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>Great question! Firsly, the annual cost of a full-time senior-level developer is very high at the moment. Secondly, it's hard to find a developer that's available. Thirdly, you might not have enough work to keep them busy at all times.</p>
+                            <p>With the monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying your developer when you have work available for them.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>Is there a limit to how many requests I can have?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>There is no limit to the amount of requests that you can have. You can submit as many requests to your queue as you'd like, and we'll work through them one at a time.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>How fast will I receive my HTML + CSS?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>Smaller requests - like elements or sections - are usually delivered within 2 days or less. Larger requests - like full landing pages - can take up to 3 days or more, depending on the complexity of the request.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>Who are the developers?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>This might surprise you, but CodePulse is actually an agency of one. You'll work directly with me, the founder of CodePulse. However, custom requests such as animations or custom integrations might be provided by partner developers.</p>
+                            <p>I'm a senior-level front-end developer with over 10 years of experience in the industry.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>What are the requirements for the design input?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>Preferably a Figma file, which makes use of modern technologies such as auto-layout and variants. However, I can also work with Sketch, Adobe XD, or even a simple PDF.</p>
+                            <p>All additional assets such as fonts, images, and icons should be provided separately.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>What does the code output look like?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>You will receive a zip file containing the HTML, CSS, JS (optional) and any images that were used in the design. The code is fully responsive and ready to be integrated into your back-end or CMS.</p>
+                            <p>TailwindCSS is used for the styling. Any interactivity is written in vanilla JavaScript or AlpineJS.</p>
+                            <p>If you have any specific requirements, please <a href="#" class="font-bold hover:underline">book a call</a> to discuss.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>Can I implement the code in my back-end/CMS?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>Yes, our front-end code has been successfully implemented in frameworks like React and Vue, and CMSs like WordPress and Statamic.</p>
+                            <p>If you have any specific requirements, please <a href="#" class="font-bold hover:underline">book a call</a> to discuss.</p>
+                        </div>
+                    </details>
+                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[999px]">
+                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                            <span>Are there any refunds if I don’t like the service?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                            </svg>
+
+                        </summary>
+                        <div class="pb-sm text-gray-800 space-y-sm max-h-0 transition-all group-open:max-h-[999px]">
+                            <p>Due to the high quality nature of the work, there will be no refunds issued. However, you can cancel your subscription at any time.</p>
+                        </div>
+                    </details>
+                </div>
+                <p class="mt-md text-center">Didn’t see your question? <a href="#" class="font-bold hover:underline">Book a call</a></p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <svg class="-mb-px w-full z-0 text-black" viewBox="0 0 1440 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M720 0.269531C440 0.269531 0 32.2695 0 32.2695H1440C1440 32.2695 1000 0.269531 720 0.269531Z" fill="currentColor"/>
+        </svg>
+        <div class="py-2xl bg-black">
+            <div class="container text-center">
+
+                <h2 class="text-4xl font-medium text-white">Find out if CodePulse is right for you.</h2>
+                <p class="mt-md">
+                    <a href="#plans" class="inline-block px-xl py-sm bg-rose-600 text-white font-medium rounded-full shadow-md shadow-rose-600/30 transition-colors hover:bg-rose-500">
+                        Get started
+                    </a>
+                </p>
+                <h3 class="mt-2xl text-gray-200">CodePulse is writing code for these brands:</h3>
+                <ul class="mt-md flex flex-wrap justify-center gap-x-lg gap-y-md">
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/wnc.png" alt="World Nautic Center">
+                    </li>
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/bm.png" alt="Boonstra Marketing Logo">
+                    </li>
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/ksf.png" alt="Kleinste Soepfabriek Logo">
+                    </li>
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/vos.png" alt="Advocatenkantoor Vos Logo">
+                    </li>
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/drumlin.png" alt="Drumlin Distillery Logo">
+                    </li>
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/zp.png" alt="Zweedse Pellets Logo">
+                    </li>
+                    <li class="h-6">
+                        <img class="w-full h-full object-contain" src="src/img/logos/smaakgroen.png" alt="Smaak Groenten Logo">
+                    </li>
+                </ul>
+
+                <svg class="mt-2xl mx-auto w-48" viewBox="0 0 135 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.55991 2.66525C4.7837 2.88904 4.7837 3.25189 4.55991 3.47568L1.38349 6.6521L4.55991 9.82852C4.7837 10.0523 4.7837 10.4152 4.55991 10.639C4.33611 10.8627 3.97327 10.8627 3.74948 10.639L0.167846 7.05732C-0.0559486 6.83352 -0.0559486 6.47068 0.167846 6.24689L3.74948 2.66525C3.97327 2.44146 4.33611 2.44146 4.55991 2.66525ZM7.04458 8.10934C7.26837 7.88554 7.63121 7.88554 7.85501 8.10934L11.4366 11.691C11.6604 11.9148 11.6604 12.2776 11.4366 12.5014L7.85501 16.083C7.63121 16.3068 7.26837 16.3068 7.04458 16.083C6.82078 15.8592 6.82078 15.4964 7.04458 15.2726L10.221 12.0962L7.04458 8.91977C6.82078 8.69597 6.82078 8.33313 7.04458 8.10934Z" fill="white"/>
+                    <path d="M28.4754 17.0406C26.8869 17.0406 25.515 16.6795 24.3597 15.9575C23.2044 15.2194 22.3138 14.2326 21.6881 12.997C21.0783 11.7615 20.7735 10.3896 20.7735 8.88131C20.7735 7.37301 21.0783 6.0011 21.6881 4.76558C22.3138 3.53006 23.2044 2.55127 24.3597 1.82921C25.515 1.09111 26.8869 0.722058 28.4754 0.722058C29.6788 0.722058 30.7619 0.938676 31.7246 1.37191C32.6874 1.7891 33.5057 2.36675 34.1796 3.10485C34.8536 3.84295 35.359 4.7014 35.696 5.68019H33.7945C33.3934 4.7014 32.7596 3.92318 31.8931 3.34553C31.0267 2.76789 29.9356 2.47907 28.6198 2.47907C27.3362 2.47907 26.237 2.76789 25.3224 3.34553C24.4239 3.90714 23.7419 4.66931 23.2766 5.63205C22.8113 6.59479 22.5786 7.67788 22.5786 8.88131C22.5786 10.0687 22.8113 11.1518 23.2766 12.1306C23.7419 13.0933 24.4239 13.8635 25.3224 14.4412C26.237 15.0028 27.3362 15.2836 28.6198 15.2836C29.9356 15.2836 31.0267 14.9947 31.8931 14.4171C32.7596 13.8394 33.3934 13.0612 33.7945 12.0824H35.696C35.359 13.0452 34.8536 13.9036 34.1796 14.6578C33.5057 15.3959 32.6874 15.9815 31.7246 16.4148C30.7619 16.832 29.6788 17.0406 28.4754 17.0406Z" fill="white"/>
+                    <path d="M43.2398 17.0406C42.0203 17.0406 40.9613 16.7678 40.0627 16.2222C39.1642 15.6606 38.4742 14.9065 37.9928 13.9598C37.5114 13.0131 37.2708 11.9701 37.2708 10.8309C37.2708 9.67557 37.5114 8.6326 37.9928 7.70195C38.4742 6.75525 39.1642 6.00913 40.0627 5.46357C40.9613 4.90197 42.0203 4.62117 43.2398 4.62117C44.4753 4.62117 45.5343 4.90197 46.4168 5.46357C47.3154 6.00913 48.0053 6.75525 48.4867 7.70195C48.9681 8.6326 49.2088 9.67557 49.2088 10.8309C49.2088 11.9701 48.9681 13.0131 48.4867 13.9598C48.0053 14.9065 47.3154 15.6606 46.4168 16.2222C45.5343 16.7678 44.4753 17.0406 43.2398 17.0406ZM43.2398 15.4039C44.1383 15.4039 44.8925 15.1953 45.5022 14.7781C46.128 14.3609 46.6013 13.8074 46.9223 13.1174C47.2432 12.4114 47.4036 11.6492 47.4036 10.8309C47.4036 9.99649 47.2432 9.23432 46.9223 8.54435C46.6013 7.85438 46.128 7.30081 45.5022 6.88362C44.8925 6.46643 44.1383 6.25783 43.2398 6.25783C42.3572 6.25783 41.6031 6.46643 40.9773 6.88362C40.3515 7.30081 39.8782 7.85438 39.5573 8.54435C39.2364 9.23432 39.0759 9.99649 39.0759 10.8309C39.0759 11.6492 39.2364 12.4114 39.5573 13.1174C39.8782 13.8074 40.3515 14.3609 40.9773 14.7781C41.6031 15.1953 42.3572 15.4039 43.2398 15.4039Z" fill="white"/>
+                    <path d="M56.6809 17.0406C55.5096 17.0406 54.4827 16.7678 53.6001 16.2222C52.7337 15.6606 52.0598 14.9065 51.5784 13.9598C51.097 13.0131 50.8563 11.9701 50.8563 10.8309C50.8563 9.67557 51.097 8.6326 51.5784 7.70195C52.0598 6.75525 52.7337 6.00913 53.6001 5.46357C54.4827 4.90197 55.5096 4.62117 56.6809 4.62117C57.6758 4.62117 58.5262 4.81372 59.2322 5.19882C59.9542 5.58391 60.5399 6.1054 60.9892 6.76327V0H62.7943V16.848H60.9892V14.9225C60.5399 15.5644 59.9542 16.0778 59.2322 16.4629C58.5262 16.848 57.6758 17.0406 56.6809 17.0406ZM56.9216 15.4039C57.8202 15.4039 58.5743 15.1953 59.1841 14.7781C59.8098 14.3609 60.2832 13.8074 60.6041 13.1174C60.925 12.4114 61.0855 11.6492 61.0855 10.8309C61.0855 9.99649 60.925 9.23432 60.6041 8.54435C60.2832 7.85438 59.8098 7.30081 59.1841 6.88362C58.5743 6.46643 57.8202 6.25783 56.9216 6.25783C56.0391 6.25783 55.2769 6.46643 54.6351 6.88362C53.9933 7.30081 53.5039 7.85438 53.1669 8.54435C52.83 9.23432 52.6615 9.99649 52.6615 10.8309C52.6615 11.6492 52.83 12.4114 53.1669 13.1174C53.5039 13.8074 53.9933 14.3609 54.6351 14.7781C55.2769 15.1953 56.0391 15.4039 56.9216 15.4039Z" fill="white"/>
+                    <path d="M71.2599 17.0406C70.0404 17.0406 68.9734 16.7678 68.0588 16.2222C67.1442 15.6606 66.4301 14.9065 65.9167 13.9598C65.4193 13.0131 65.1705 11.9701 65.1705 10.8309C65.1705 9.67557 65.4112 8.6326 65.8926 7.70195C66.374 6.75525 67.0639 6.00913 67.9625 5.46357C68.8611 4.90197 69.9201 4.62117 71.1395 4.62117C72.3751 4.62117 73.4341 4.90197 74.3166 5.46357C75.2151 6.00913 75.9051 6.75525 76.3865 7.70195C76.8679 8.6326 77.1086 9.67557 77.1086 10.8309V11.5529H67.0238C67.1201 12.2589 67.3447 12.9088 67.6977 13.5025C68.0668 14.0801 68.5562 14.5455 69.1659 14.8985C69.7757 15.2354 70.4817 15.4039 71.284 15.4039C72.1344 15.4039 72.8484 15.2194 73.4261 14.8503C74.0037 14.4652 74.453 13.9758 74.7739 13.3821H76.7475C76.3303 14.4572 75.6644 15.3397 74.7498 16.0297C73.8513 16.7036 72.688 17.0406 71.2599 17.0406ZM67.0479 9.86812H75.2312C75.0707 8.8412 74.6375 7.98275 73.9315 7.29278C73.2255 6.60282 72.2948 6.25783 71.1395 6.25783C69.9843 6.25783 69.0536 6.60282 68.3476 7.29278C67.6576 7.98275 67.2244 8.8412 67.0479 9.86812Z" fill="white"/>
+                    <path d="M79.3142 21.6136V4.81372H81.1193V6.73921C81.5686 6.08133 82.1463 5.56787 82.8523 5.19882C83.5743 4.81372 84.4328 4.62117 85.4276 4.62117C86.599 4.62117 87.6179 4.90197 88.4843 5.46357C89.3668 6.00913 90.0488 6.75525 90.5302 7.70195C91.0115 8.6326 91.2522 9.67557 91.2522 10.8309C91.2522 11.9701 91.0115 13.0131 90.5302 13.9598C90.0488 14.9065 89.3668 15.6606 88.4843 16.2222C87.6179 16.7678 86.599 17.0406 85.4276 17.0406C84.4328 17.0406 83.5743 16.848 82.8523 16.4629C82.1463 16.0618 81.5686 15.5403 81.1193 14.8985V21.6136H79.3142ZM85.1869 15.4039C86.0855 15.4039 86.8477 15.1953 87.4734 14.7781C88.1153 14.3609 88.6047 13.8074 88.9416 13.1174C89.2786 12.4114 89.4471 11.6492 89.4471 10.8309C89.4471 9.99649 89.2786 9.23432 88.9416 8.54435C88.6047 7.85438 88.1153 7.30081 87.4734 6.88362C86.8477 6.46643 86.0855 6.25783 85.1869 6.25783C84.3044 6.25783 83.5503 6.46643 82.9245 6.88362C82.2987 7.30081 81.8254 7.85438 81.5044 8.54435C81.1835 9.23432 81.0231 9.99649 81.0231 10.8309C81.0231 11.6492 81.1835 12.4114 81.5044 13.1174C81.8254 13.8074 82.2987 14.3609 82.9245 14.7781C83.5503 15.1953 84.3044 15.4039 85.1869 15.4039Z" fill="white"/>
+                    <path d="M98.3218 17.0406C97.5034 17.0406 96.7252 16.848 95.9871 16.4629C95.249 16.0618 94.6473 15.4761 94.182 14.7059C93.7327 13.9197 93.5081 12.9569 93.5081 11.8177V4.81372H95.3132V11.7695C95.3132 12.8607 95.6261 13.7432 96.2519 14.4171C96.8937 15.075 97.704 15.4039 98.6828 15.4039C99.3567 15.4039 99.9665 15.2515 100.512 14.9466C101.058 14.6257 101.491 14.1924 101.812 13.6469C102.149 13.1013 102.317 12.4675 102.317 11.7455V4.81372H104.122V16.848H102.317V14.9707C101.884 15.5483 101.354 16.0377 100.729 16.4388C100.103 16.84 99.3006 17.0406 98.3218 17.0406Z" fill="white"/>
+                    <path d="M107.261 16.848V0H109.066V16.848H107.261Z" fill="white"/>
+                    <path d="M116.577 17.0406C115.47 17.0406 114.532 16.856 113.761 16.487C113.007 16.1179 112.43 15.6366 112.028 15.0429C111.627 14.4331 111.403 13.7753 111.355 13.0692H113.232C113.28 13.4704 113.416 13.8635 113.641 14.2486C113.882 14.6177 114.243 14.9225 114.724 15.1632C115.205 15.3879 115.831 15.5002 116.601 15.5002C116.842 15.5002 117.139 15.4761 117.492 15.428C117.845 15.3798 118.182 15.2916 118.503 15.1632C118.84 15.0348 119.121 14.8423 119.345 14.5856C119.57 14.3288 119.682 13.9999 119.682 13.5988C119.682 13.1013 119.49 12.7162 119.105 12.4435C118.72 12.1707 118.222 11.9621 117.612 11.8177C117.003 11.6572 116.353 11.5048 115.663 11.3604C114.989 11.216 114.347 11.0314 113.737 10.8068C113.128 10.5661 112.63 10.2372 112.245 9.81999C111.86 9.38675 111.667 8.80108 111.667 8.06298C111.667 6.97187 112.061 6.12947 112.847 5.53578C113.649 4.92604 114.828 4.62117 116.385 4.62117C117.444 4.62117 118.302 4.78965 118.96 5.12661C119.634 5.44753 120.14 5.86471 120.477 6.37818C120.83 6.89164 121.038 7.44522 121.102 8.03891H119.273C119.209 7.52545 118.952 7.08419 118.503 6.71514C118.07 6.34609 117.348 6.16156 116.337 6.16156C114.427 6.16156 113.473 6.73921 113.473 7.8945C113.473 8.37587 113.665 8.74492 114.05 9.00165C114.435 9.25839 114.933 9.46698 115.542 9.62744C116.152 9.77185 116.794 9.91626 117.468 10.0607C118.158 10.189 118.808 10.3736 119.417 10.6142C120.027 10.8549 120.525 11.1999 120.91 11.6492C121.295 12.0824 121.487 12.6761 121.487 13.4303C121.487 14.6016 121.038 15.5002 120.14 16.126C119.257 16.7357 118.07 17.0406 116.577 17.0406Z" fill="white"/>
+                    <path d="M129.151 17.0406C127.932 17.0406 126.865 16.7678 125.95 16.2222C125.036 15.6606 124.322 14.9065 123.808 13.9598C123.311 13.0131 123.062 11.9701 123.062 10.8309C123.062 9.67557 123.303 8.6326 123.784 7.70195C124.265 6.75525 124.955 6.00913 125.854 5.46357C126.753 4.90197 127.812 4.62117 129.031 4.62117C130.267 4.62117 131.326 4.90197 132.208 5.46357C133.107 6.00913 133.797 6.75525 134.278 7.70195C134.759 8.6326 135 9.67557 135 10.8309V11.5529H124.915C125.012 12.2589 125.236 12.9088 125.589 13.5025C125.958 14.0801 126.448 14.5455 127.057 14.8985C127.667 15.2354 128.373 15.4039 129.175 15.4039C130.026 15.4039 130.74 15.2194 131.318 14.8503C131.895 14.4652 132.344 13.9758 132.665 13.3821H134.639C134.222 14.4572 133.556 15.3397 132.641 16.0297C131.743 16.7036 130.579 17.0406 129.151 17.0406ZM124.939 9.86812H133.123C132.962 8.8412 132.529 7.98275 131.823 7.29278C131.117 6.60282 130.186 6.25783 129.031 6.25783C127.876 6.25783 126.945 6.60282 126.239 7.29278C125.549 7.98275 125.116 8.8412 124.939 9.86812Z" fill="white"/>
+                </svg>
+                <p class="mt-xs text-sm text-gray-200">Based in Haarlem, NL</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
