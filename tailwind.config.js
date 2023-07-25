@@ -13,6 +13,7 @@ export default {
             },
         }),
         fontFamily: {
+            sans: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.sans],
             display: ["Rubik", ...defaultTheme.fontFamily.sans],
         },
         extend: {
