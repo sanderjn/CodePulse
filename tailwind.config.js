@@ -14,7 +14,6 @@ export default {
         }),
         fontFamily: {
             sans: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
-            display: ["Rubik", ...defaultTheme.fontFamily.sans],
         },
         extend: {
             spacing: {
