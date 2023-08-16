@@ -420,108 +420,124 @@
                 </div>
 
                 <div class="mt-lg mx-auto max-w-lg divide-y divide-y-gray-300">
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click="faqOpen = ! faqOpen">
                             <span>Why wouldn’t I just hire a full-time developer?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>Great question! Firstly, the annual cost of a full-time senior-level developer is very high at the moment. Secondly, it's hard to find a developer that's available. Thirdly, you might not have enough work to keep them busy at all times.</p>
-                            <p>With the monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying your developer when you have work available for them.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>Great question! Firstly, the annual cost of a full-time senior-level developer is very high at the moment. Secondly, it's hard to find a developer that's available. Thirdly, you might not have enough work to keep them busy at all times.</p>
+                                <p>With the monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying your developer when you have work available for them.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>Is there a limit to how many requests I can have?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>There is no limit to the amount of requests that you can have. You can submit as many requests to your queue as you'd like, and we'll work through them one at a time.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>There is no limit to the amount of requests that you can have. You can submit as many requests to your queue as you'd like, and we'll work through them one at a time.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>How fast will I receive my HTML + CSS?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>Smaller requests - like elements or sections - are usually delivered within 2 days or less. Larger requests - like full landing pages - can take up to 3 days or more, depending on the complexity of the request.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>Smaller requests - like elements or sections - are usually delivered within 2 days or less. Larger requests - like full landing pages - can take up to 3 days or more, depending on the complexity of the request.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>Who are the developers?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>This might surprise you, but CodePulse is actually an agency of one. You'll work directly with me, the founder of CodePulse. However, custom requests such as animations or custom integrations might be provided by partner developers.</p>
-                            <p>I'm a senior-level front-end developer with over 10 years of experience in the industry.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>This might surprise you, but CodePulse is actually an agency of one. You'll work directly with me, the founder of CodePulse. However, custom requests such as animations or custom integrations might be provided by partner developers.</p>
+                                <p>I'm a senior-level front-end developer with over 10 years of experience in the industry.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>What are the requirements for the design input?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>Preferably a Figma file, which makes use of modern technologies such as auto-layout and variants. However, I can also work with Sketch, Adobe XD, or even a simple PDF.</p>
-                            <p>All additional assets such as fonts, images, and icons should be provided separately.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>Preferably a Figma file, which makes use of modern technologies such as auto-layout and variants. However, I can also work with Sketch, Adobe XD, or even a simple PDF.</p>
+                                <p>All additional assets such as fonts, images, and icons should be provided separately.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>What does the code output look like?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>You will receive a zip file containing the high-quality HTML, CSS & JS files, and any images that were used in the design. The code is fully responsive and ready to be integrated into your back-end or CMS.</p>
-                            <p>TailwindCSS is used for the styling. Any interactivity that can't be done in plain HTML and CSS, is written in vanilla JavaScript or AlpineJS.</p>
-                            <p>If you have any specific requirements, please <a href="mailto:hello@codepulse.co?subject=Book a call" class="font-bold hover:underline">book a call</a> to discuss.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>You will receive a zip file containing the high-quality HTML, CSS & JS files, and any images that were used in the design. The code is fully responsive and ready to be integrated into your back-end or CMS.</p>
+                                <p>TailwindCSS is used for the styling. Any interactivity that can't be done in plain HTML and CSS, is written in vanilla JavaScript or AlpineJS.</p>
+                                <p>If you have any specific requirements, please <a href="mailto:hello@codepulse.co?subject=Book a call" class="font-bold hover:underline">book a call</a> to discuss.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>Can I implement the code in my back-end/CMS?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>Yes, our front-end code has been successfully implemented in frameworks like React and Vue, and CMSs like WordPress and Statamic.</p>
-                            <p>If you have any specific requirements, please <a href="mailto:hello@codepulse.co?subject=Book a call" class="font-bold hover:underline">book a call</a> to discuss.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>Yes, our front-end code has been successfully implemented in frameworks like React and Vue, and CMSs like WordPress and Statamic.</p>
+                                <p>If you have any specific requirements, please <a href="mailto:hello@codepulse.co?subject=Book a call" class="font-bold hover:underline">book a call</a> to discuss.</p>
+                            </div>
                         </div>
-                    </details>
-                    <details class="group max-h-24 overflow-hidden transition-all open:max-h-[720px]">
-                        <summary class="py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none">
+                    </div>
+                    <div class="group" x-data="{ faqOpen: false }">
+                        <button class="w-full py-sm flex items-center justify-between gap-md font-bold cursor-pointer list-none" type="button" @click.prevent="faqOpen = ! faqOpen">
                             <span>Are there any refunds if I don’t like the service?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-none w-5 h-5 transition-transform" :class="faqOpen ? 'rotate-45' : 'rotate-0'">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                             </svg>
 
-                        </summary>
-                        <div class="pb-sm text-gray-800 space-y-sm opacity-0 group-open:opacity-100">
-                            <p>Due to the high quality nature of the work, there will be no refunds issued. However, you can cancel your subscription at any time.</p>
+                        </button>
+                        <div class="text-gray-800 space-y-sm" x-show="faqOpen" x-collapse>
+                            <div class="pb-sm">
+                                <p>Due to the high quality nature of the work, there will be no refunds issued. However, you can cancel your subscription at any time.</p>
+                            </div>
                         </div>
-                    </details>
+                    </div>
                 </div>
                 <p class="mt-md text-center">Didn’t see your question? <a href="mailto:hello@codepulse.co?subject=Book a call" class="font-bold hover:underline">Book a call</a></p>
 
