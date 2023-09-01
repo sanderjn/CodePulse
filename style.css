@@ -1029,6 +1029,10 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1088,11 +1092,6 @@ html {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.group[open] .group-open\:rotate-45 {
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px) {
@@ -1193,4 +1192,8 @@ html {
   .lg\:justify-between {
     justify-content: space-between;
   }
+}
+
+.\[\&\>p\]\:pb-sm>p {
+  padding-bottom: 1rem;
 }
