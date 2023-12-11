@@ -1,6 +1,6 @@
 # CodePulse Website
 
-Thanks for checking out the source code. Most of the magic happens in the good ol' [index.html](index.html).
+Thanks for checking out the source code. Since I'm using TailwindCSS and AlpineJS, most of the magic happens in the good ol' [index.html](index.html). Go check it out!
 
 ## Libraries/Frameworks Used
 
