@@ -1,5 +1,7 @@
 # CodePulse Website
 
+Thanks for checking out the source code. Most of the magic happens in the good ol' [index.html](index.html).
+
 ## Libraries/Frameworks Used
 
 -   TailwindCSS
