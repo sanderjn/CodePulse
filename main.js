@@ -1,11 +1,11 @@
 import "./style.css";
 import "./src/js/alpine.js";
 
-import imageMacbook from "./src/img/macbook.jpg?w=1000&h=610&format=webp";
-import imageBoonstra from "./src/img/boonstra.jpg?w=900&h=900&format=webp";
-import imageWNC from "./src/img/wnc.jpg?w=900&h=900&format=webp";
-import imageVos from "./src/img/vos.jpg?w=900&h=900&format=webp";
-import imageCeres from "./src/img/ceres.jpg?w=900&h=900&format=webp";
+import imageMacbook from "./src/img/macbook.jpg?w=700&format=webp";
+import imageBoonstra from "./src/img/boonstra.jpg?w=600&h=600&format=webp";
+import imageWNC from "./src/img/wnc.jpg?w=600&h=600&format=webp";
+import imageVos from "./src/img/vos.jpg?w=600&h=600&format=webp";
+import imageCeres from "./src/img/ceres.jpg?w=600&h=600&format=webp";
 import imageSander from "./src/img/sander.jpg?w=100&h=100&format=webp";
 import logoBM from "./src/img/logos/bm.png?format=webp";
 import logoDrumlin from "./src/img/logos/drumlin.png?format=webp";
